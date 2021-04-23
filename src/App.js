@@ -4,9 +4,6 @@ import { CheckOutlined, CloseOutlined } from '@ant-design/icons';
 import domo from 'ryuu.js'
 import './App.css';
 
-// TODO: add thumbs up, thumbs down, write to appdb and join data
-// say: workflows are going to be similar, if you're annotating data it's the exact same thing, adding tags, etc. Same for filtering, date ranges, etc.
-
 function App() {
   const [tableData, setTableData] = useState();
   const [annotationData, setAnnotationData] = useState({});
@@ -83,14 +80,14 @@ function App() {
         }
 
         return (
-          <>
+          <div style={{ display: 'flex' }}>
             <Button type="primary" onClick={() => setIsInterested(record.id, true)}>
               <CheckOutlined />
             </Button>
             <Button style={{ marginLeft: 20 }} danger onClick={() => setIsInterested(record.id, false)}>
               <CloseOutlined />
             </Button>
-          </>
+          </div>
         )
       }
     }
