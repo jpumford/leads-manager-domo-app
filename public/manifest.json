@@ -1,0 +1,35 @@
+{
+    "name": "React DomoApp",
+    "version": "0.0.1",
+    "size": {
+        "width": 3,
+        "height": 3
+    },
+    "mapping": [
+        {
+          "dataSetId": "0a422ae8-f3db-41f6-ae3e-15ccb767dc78",
+          "alias": "leads",
+          "fields": []
+        }
+    ],
+    "collections": [
+        {
+            "name": "leadResults",
+            "schema": {
+                "columns": [
+                    {
+                        "name": "id",
+                        "type": "LONG"
+                    },
+                    {
+                        "name": "isInterested",
+                        "type": "STRING"
+                    }
+                ]
+            },
+            "syncEnabled": true
+        }
+    ],
+    "id": "da99ad7c-172f-4153-b67f-1d0e44d20cc9",
+    "proxyId": "a94b0a4b-13fc-4e11-8db2-67209057a025"
+}
